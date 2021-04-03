@@ -1,4 +1,4 @@
-package cl.certificate.java11._04_flujos_de_control;
+package cl.certificate.java11._04_control_de_flujos;
 
 
 public class IfElse {
