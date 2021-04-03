@@ -26,3 +26,10 @@ public class MathFunctions {
   <li>Compiler error on line 8</li>
   <li>None of the above</li>
 </ol>
+
+#### Solución
+<details>
+  <summary>Ver Solución</summary>
+  
+  B. El código se compila correctamente, por lo que las opciones D y E son incorrectas. El valor de a no se puede cambiar con el método addToInt(), sin importar lo que haga el método, porque solo se pasa una copia de la variable al parámetro x. Por lo tanto, no cambia y la salida en la línea 9 es 15.
+</details>
