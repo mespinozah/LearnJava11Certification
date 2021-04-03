@@ -1,4 +1,6 @@
-# Pregunta 1
+# Preguntas de Practica
+
+## Pregunta 1
 
 ```Java
 public class MathFunctions {    
@@ -14,4 +16,13 @@ public class MathFunctions {
      }
 }
 ```
+### Cual es el resultado?
 
+<ol type="a">
+  <li>10</li>
+  <li>15</li>
+  <li>25</li>
+  <li>Compiler error on line 3</li>
+  <li>Compiler error on line 8</li>
+  <li>None of the above</li>
+</ol>
