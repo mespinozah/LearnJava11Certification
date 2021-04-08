@@ -1,4 +1,4 @@
-package cl.certificate.java11._07_mejorando_diseno_clases;
+package cl.certificate.java11._07_clases_avanzadas;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
