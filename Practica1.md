@@ -373,3 +373,62 @@ switch (myScore) {
   
   El bucle for-each lanza implícitamente cada objeto Tadpole a una referencia Amphibian, lo cual está permitido porque Tadpole es una subclase de Amphibian. A partir de ahí, se permite cualquier supertipo de anfibio sin un elenco explícito. Esto incluye CanSwim, que Amphibian implementa, y Object, desde donde se extienden todas las clases, lo que hace que las opciones A y E sean correctas. La opción C también es correcta, ya que la referencia se convierte en el mismo tipo. La opción B es incorrecta, ya que booleano no es un supertipo de anfibio. La opción D también es incorrecta. Aunque el objeto subyacente es una instancia de Tadpole, requiere un lanzamiento explícito en la línea 9 ya que el tipo de referencia es Anfibio. La opción F es incorrecta porque hay opciones que permiten que el código se compile.
 </details>
+
+---
+
+## Pregunta 11
+
+¿Cuál de las siguientes expresiones se compila sin errores? (Elija todas las que correspondan).
+
+### Alternativas
+
+<ol type="a">
+  <li>int monday = 3 + 2.0;</li>
+  <li>double tuesday = 5_6L;</li>
+  <li>boolean wednesday = 1 > 2 ? !true;</li>
+  <li>short thursday = (short)Integer.MAX_VALUE;</li>
+  <li>long friday = 8.0L;</li>
+  <li>var saturday = 2_.0;</li>
+  <li>None of the above</li>
+</ol>
+
+#### Solución
+<details>
+  <summary>Ver solución</summary>
+  
+  Alternativas: B y D 
+  
+  La opción A no compila, ya que la expresión 3 + 2.0 se evalúa como un doble, y un doble requiere que se asigne una conversión explícita a un int. La opción B se compila sin problemas, ya que un valor largo puede convertirse implícitamente en un doble. La opción C no se compila porque al operador ternario (? :) le faltan dos puntos (:), seguidos de una segunda expresión. La opción D es correcta. Aunque el valor int es mayor que un short, implícitamente se convierte en un short, lo que significa que el valor se ajustará para encajar en un short. La opción E es incorrecta, ya que no puede usar un decimal (.) Con el sufijo largo (L). Finalmente, la opción F es incorrecta, ya que no se puede usar un guión bajo junto a un punto decimal.
+</details>
+
+---
+
+## Pregunta 12
+
+Suponga que tiene un módulo llamado com.vet. ¿Dónde podría colocar el siguiente archivo module‐info.java para crear un módulo válido?
+
+```Java
+public module com.vet {
+       exports com.vet;
+    }
+```
+
+### Alternativas
+
+<ol type="a">
+  <li>At the same level as the com folder</li>
+  <li>At the same level as the vet folder</li>
+  <li>Inside the vet folder</li>
+  <li>None of the above</li>
+</ol>
+
+#### Solución
+<details>
+  <summary>Ver solución</summary>
+  
+  Alternativa: D
+  
+  Si este fuera un archivo module‐info.java válido, debería colocarse en el directorio raíz del módulo, que es la opción A. Sin embargo, un módulo no puede usar el modificador de acceso público. La opción D es correcta porque el archivo proporcionado no se compila independientemente de la ubicación en el proyecto.
+
+
+</details>
