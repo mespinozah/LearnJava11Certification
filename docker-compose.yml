@@ -1,0 +1,10 @@
+version: "3.2"
+services:
+  java-notebook:
+    image: jbindinga/java-notebook
+    ports:
+      - "8888:8888"
+    volumes:
+      - type: bind
+        source: ./modules
+        target: /home/jovyan
